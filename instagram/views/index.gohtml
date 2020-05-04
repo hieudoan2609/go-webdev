@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Pictures:</h1>
+
+{{range .}}
+<img src="/public/{{.}}" width="400px">
+{{end}}
+
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="photo">
+    <input type="submit">
+</form>
+
+</body>
+</html>
