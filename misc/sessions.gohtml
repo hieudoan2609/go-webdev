@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<form method="post">
+
+    <input type="text" name="username" placeholder="username"><br>
+    <input type="email" name="email" placeholder="email"><br>
+    <input type="submit">
+
+</form>
+
+<!-- if . -->
+{{if .UserName}}
+username: {{.UserName}}<br>
+email: {{.Email}}<br>
+{{end}}
+
+</body>
+</html>
